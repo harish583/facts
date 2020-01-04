@@ -1,0 +1,53 @@
+
+.white-back-black-text#root{
+    @import 'variables';
+    @import 'Header/index.scss';
+    @import 'BodyContent/index.scss';
+    @import 'fact/index.scss';
+    @import 'factElement/index.scss';
+    @import  'HeaderLink/index.scss';
+    @import 'HeaderLinks/index.scss';
+    background: $app_bc_color;
+    font-family: Times;
+    transition:  all 1s ease;
+    .app-content{
+        width:$app_width;
+        margin: auto;
+    }
+    .oo{
+        color: $app_text_color;
+    }
+}
+.black-back-white-text#root{
+    @import 'variables_check';
+    background: $app_check_bc_color;
+    min-height: 100vh; 
+    // width: 100vw;  
+    font-family: Times;                  
+    margin: 0px;        
+    color:white;
+    transition:  all 1s ease; 
+    @import 'Header/index_check.scss';
+    @import 'BodyContent/index_check.scss';
+    @import 'fact/index_check.scss';
+    @import 'factElement/index_check.scss';
+    @import  'HeaderLink/index_check.scss';
+    @import 'HeaderLinks/index_check.scss';
+    .app-content{
+        width:$app_width;
+        margin: auto;
+    }
+    .oo{
+        color: $app_check_text_color;
+    }
+
+}
+.inline-block{
+    display: inline-block;
+}
+.float-right{
+    float: right;
+}
+.c-pointer{
+    cursor: pointer;
+}
