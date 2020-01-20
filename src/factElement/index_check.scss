@@ -2,12 +2,15 @@
     list-style: decimal;
     padding: 10px;
     color: white;
+    text-transform: capitalize;
 }
 .Fact-element-container:nth-child(odd){
     background-color:none;
     border: 1px solid;
     color: white;
+    text-transform: capitalize;
 }
 .Fact-element-container:nth-child(even){
     background-color: red;
+    text-transform: capitalize;
 }

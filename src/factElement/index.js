@@ -12,7 +12,7 @@ class FactElement extends React.Component {
     var con = this.state.content;
     return (
       <li className="Fact-element-container">
-        {con && con.fact}
+        {con && con.fact.toLowerCase()}
       </li>
     );
   }
