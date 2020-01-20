@@ -3,7 +3,7 @@ import BodyContent from './BodyContent';
 import Header from './Header';
 import './App.scss';
 import {
-  BrowserRouter as Router
+  BrowserRouter as Router, Switch, Route
 } from "react-router-dom";
 
 class App extends React.Component {
@@ -14,10 +14,9 @@ class App extends React.Component {
       searchkey:new Date().getTime()
     }
   }
-  
   componentDidMount(){
     fetch(
-      "http://192.168.0.7/project_phpfile/factsphp/get_facts.php",
+      "http://thefactsite.000webhostapp.com/factsphp/get_facts.php",
       {
         body:JSON.stringify({
           old_count:0,
@@ -39,7 +38,7 @@ class App extends React.Component {
   }
   searchkeywordsearch=(keyword)=>{
     fetch(
-      "http://192.168.0.7/project_phpfile/factsphp/search_get_facts.php",
+      "http://thefactsite.000webhostapp.com/factsphp/search_get_facts.php",
       {
         headers: {
           'Accept': 'application/json, text/plain, */*',

@@ -1,0 +1,11 @@
+.Header-links-holder{
+    float: right;
+    a{  
+        text-decoration: none;
+        padding: 26px;
+        display: inline-block;
+        &:hover{
+            color: green;
+        }
+    }
+}

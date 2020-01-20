@@ -1,0 +1,38 @@
+.Fact-container{
+    
+}
+.jump-class a{
+    color: white;
+}
+.app-content{
+    width:$app_width;
+    width: 64%;
+    margin: auto;
+    margin-left: 350px;
+}
+.fixed{
+    position: fixed;
+    left: 0;
+    width: 400px;
+    top: -90px;
+}
+.content-links{
+    position: absolute;
+    top: 200px;
+    height: 500px;
+    overflow: auto;
+    left: 0;
+    li{
+        padding: 10px;
+        border: 1px solid;
+        list-style: none;
+        border-bottom: 0;    
+        text-transform: capitalize;
+        a{
+            text-decoration: none;
+        }
+    }
+    li:last-child{
+        border-bottom: 1px solid;
+    }
+}
