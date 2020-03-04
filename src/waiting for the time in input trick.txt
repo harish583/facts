@@ -1,0 +1,1 @@
+var b = '';document.querySelectorAll(".ng-touched")[0].addEventListener("keyup",(e)=>{var valll = e.target.value;if(b){clearTimeout(b)};b=setTimeout((e)=>console.log('eee..',valll),2000)});
